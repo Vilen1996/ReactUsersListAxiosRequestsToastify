@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": "a1b2",
+      "name": "John",
+      "surname": "Doe",
+      "salary": 60000
+    },
+    {
+      "id": "c3d4",
+      "name": "Jane",
+      "surname": "Smith",
+      "salary": 72000
+    },
+    {
+      "id": "e5f6",
+      "name": "Michael",
+      "surname": "Brown",
+      "salary": 850000
+    },
+    {
+      "id": "g7h8",
+      "name": "Emily",
+      "surname": "Davis",
+      "salary": 680000
+    },
+    {
+      "id": "i9j0",
+      "name": "Christopher",
+      "surname": "Johnson",
+      "salary": 820000
+    },
+    {
+      "id": "k1l2",
+      "name": "Sarah",
+      "surname": "Wilson",
+      "salary": 59000
+    },
+    {
+      "id": "o5p6",
+      "name": "Jessica",
+      "surname": "Garcia",
+      "salary": 81000
+    },
+    {
+      "id": "d24d",
+      "name": "Vilen",
+      "surname": "Hovhannisyan",
+      "salary": 844400
+    },
+    {
+      "id": "a1e0",
+      "name": "Harut",
+      "surname": "Bagdasaryan",
+      "salary": 650000
+    }
+  ]
+}
