@@ -26,17 +26,10 @@ export const AddUser = ({ onAdd }) => {
           <input
             {...register("name", {
               required: "Name is required",
-              minLength: {
-                value: 3,
-                message: "Name must be at least 3 characters long",
-              },
-              // pattern: {
-              //   value: /^\d+$/,
-              //   message: "Name must be a number",
-              // },
             })}
+            placeholder="Enter name"
           />
-          {errors.name && <p style={{ color: "red" }}>{errors.name.message}</p>}
+          <p style={{ color: "red" }}>{errors.name?.message}</p>
         </div>
 
         <div>
@@ -45,10 +38,9 @@ export const AddUser = ({ onAdd }) => {
             {...register("surname", {
               required: "Surname is required",
             })}
+            placeholder="Enter surname"
           />
-          {errors.surname && (
-            <p style={{ color: "red" }}>{errors.surname.message}</p>
-          )}
+          <p style={{ color: "red" }}>{errors.surname?.message}</p>
         </div>
 
         <div>
@@ -57,10 +49,9 @@ export const AddUser = ({ onAdd }) => {
             {...register("salary", {
               required: "Salary is required",
             })}
+            placeholder="Enter salary"
           />
-          {errors.salary && (
-            <p style={{ color: "red" }}>{errors.salary.message}</p>
-          )}
+          <p style={{ color: "red" }}>{errors.salary?.message}</p>
         </div>
 
         <button type="submit">Save</button>
