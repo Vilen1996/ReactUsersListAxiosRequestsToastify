@@ -11,13 +11,15 @@
     "backend": "npx json-server -p 3004 -w users.json"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.6.0",
     "axios": "^1.7.2",
     "json-server": "^1.0.0-beta.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.52.0",
-    "react-toastify": "^10.0.5"
+    "react-toastify": "^10.0.5",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

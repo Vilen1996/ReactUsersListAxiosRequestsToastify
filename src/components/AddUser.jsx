@@ -1,6 +1,14 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import Types from "prop-types";
+import PropTypes from "prop-types"; // corrected import
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup.object().shape({
+  name: yup.string().max(32).required(),
+  surname: yup.string().max(32).required(),
+  salary: yup.number().min(1000).max(99999999).required(),
+});
 
 export const AddUser = ({ onAdd }) => {
   const {
@@ -8,7 +16,9 @@ export const AddUser = ({ onAdd }) => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm();
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
   const handleAdd = (data) => {
     axios.post("http://localhost:3004/users", data).then((res) => {
@@ -60,4 +70,6 @@ export const AddUser = ({ onAdd }) => {
   );
 };
 
-AddUser.propTypes = { onAdd: Types.func };
+AddUser.propTypes = {
+  onAdd: PropTypes.func,
+};
